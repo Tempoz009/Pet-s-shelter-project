@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet's shelter / home page</title>
-    <link rel="stylesheet" href="main-page-style.css">
+    <link rel="stylesheet" href="home-page-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter&subset=cyrillic,latin" rel="stylesheet" href="">
 </head>
+
 <body>
     <div class="header">
-        <div class="logo-img">
-            <img src="Assets/Logo.jpg" alt="">
+        <div class="logo-img-container">
+            <img class="logo-img" src="../Pet-s-shelter-project/Assets/Logo.png" alt="">
         </div>
         <div class="nav-menu">
-            <a class="nav-m-link" href="#">First</a>
-            <a class="nav-m-link" href="#">Second</a>
-            <a class="nav-m-link" href="#">Third</a>
-            <a class="nav-m-link" href="#">Fourth</a>
+            <a id="home" href="#">Home</a>
+            <a id="news" href="#">News</a>
+            <a id="catalog" href="../Pet-s-shelter-project/catalog-page.html">Catalog</a>
+            <a id="forum" href="#">Forum</a>
         </div>
-        <div class="search">
-            Search
+        <div class="search-container">
+            <input id="input-search" type="text" placeholder="Search..." size="10">
+            <img id="loupe-img" src="../Pet-s-shelter-project/Assets/loupe.png" alt="">
         </div>
-        <div class="login">
-            Login
+        <div class="sign-in-container">
+            <a id="sign-in" href="#">Sign In</a>
         </div>
     </div>
+
+    <div class="welcome-container">
+        <img id="welcome-img" src="../Pet-s-shelter-project/Assets/pets 1.jpg" alt="">
+        <p id="welcome-title">Welcome to our pet’s shelter! </p>
+        <p id="welcome-text">
+            We are dedicated to providing a safe haven for abandoned, neglected, and 
+            stray animals. At our shelter, every pet is given the love, care, and attention 
+            they deserve while they wait to find their forever homes.
+        </p>
+    </div>
 </body>
+
 </html>
