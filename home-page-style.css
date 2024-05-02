@@ -1,11 +1,13 @@
 body {
     margin: auto;
     padding: 0;
+    margin: 0;
     margin-inline: auto;
     overflow-x: hidden;
-    width: 70%;
+    /* width: 70%; */
 
-    height: 3000px;
+
+    /* height: 3000px; */
 }
 
 .header {
@@ -15,6 +17,16 @@ body {
 
     /* background-color: lightgray; */
 }
+
+.header-limited-width {
+    max-width: 70%;
+    margin: 0 auto;
+    /* Центрируем контент */
+}
+
+/* .paws {
+
+} */
 
 .logo-img {
     flex: block;
@@ -35,12 +47,21 @@ body {
     font-size: 28px;
 }
 
+#sign-in {
+    color: black;
+}
+
 a {
     text-decoration: none;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: #A4CE4A;
 }
 
 #home {
-    color: #A4CE4A;
+    color: #278020;
 }
 
 .search-container {
@@ -82,17 +103,9 @@ a {
     /* background-color: lightblue; */
 }
 
-#sign-in {
-    color: black;
-}
-
 .first-block {
     height: 440px;
     width: 70%;
-}
-
-.welcome-container {
-
 }
 
 #welcome-img {
@@ -103,6 +116,12 @@ a {
     margin-top: 50px;
 }
 
+.welcome-container-limited-width {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
 #welcome-title {
     font-family: Inter;
     font-weight: bold;
@@ -112,11 +131,207 @@ a {
     margin-bottom: 20px;
 }
 
-#welcome-text {
+#welcome-description {
     font-family: Inter;
     font-size: 24px;
     line-height: 50px;
     color: #595959;
 
     width: 1000px;
+}
+
+.volunteer-container-limited-width {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#volunteer-img {
+    flex: block;
+    width: 800px;
+    border-radius: 10px;
+
+    margin-top: 150px;
+}
+
+#volunteer-title {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 50px;
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#volunteer-description {
+    font-family: Inter;
+    font-size: 24px;
+    line-height: 50px;
+    color: #595959;
+
+    width: 800px;
+}
+
+.join-now-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+
+#join-now {
+    font-family: Inter;
+    background-color: #A4CE4A;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    width: 400px;
+    height: 100px;
+    border-radius: 25px;
+    border: none;
+
+    cursor: pointer;
+    transition: background-color 1s;
+
+    margin-top: 40px;
+}
+
+#join-now:hover {
+    background-color: rgb(68, 147, 46);
+}
+
+.footer {
+    width: 100%;
+    /* width: 100vw; */
+    margin-top: 150px;
+    background-color: #A4CE4A;
+    opacity: 90%;
+    margin-left: 0;
+}
+
+.footer-limited-width {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.footer-top-section {
+    /* width: 70%; */
+}
+
+#footer-logo {
+    flex: block;
+    width: 130px;
+    border-radius: 10px;
+}
+
+.about-shelter-text {
+    width: 550px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #363636;
+    font-style: IstokWeb;
+    
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-middle-part {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#email-icon {
+    flex: block;
+    width: 30px;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#phone-icon {
+    flex: block;
+    width: 30px;
+
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+#copyright-icon {
+    flex: block;
+    width: 30px;
+}
+
+#navigation-title {
+    font-size: 24px;
+}
+
+.footer-navigation a {
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.footer-navigation a:hover {
+    color: #ffffff;
+}
+
+.footer-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer-join-now {
+    font-family: Inter;
+    background-color: #7F9D40;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+    height: 60px;
+    border-radius: 25px;
+    border: none;
+
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+#footer-join-now:hover {
+    background-color: rgb(47, 100, 32);
+}
+
+.footer-navigation {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.footer-bottom-part {
+    font-size: 22px;
+    display: flex;
+}
+
+.copyright-section {
+    display: flex;
+    align-items: end;
+    
+    align-items: center;
+    justify-content: end;
+
+    margin-left: 600px;
+}
+
+.email-section {
+    display: flex;
+    justify-content: center;
+}
+
+.phone-section {
+    display: flex;
+    /* justify-content: center; */
 }
