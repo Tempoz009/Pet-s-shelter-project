@@ -4,10 +4,6 @@ body {
     margin: 0;
     margin-inline: auto;
     overflow-x: hidden;
-    /* width: 70%; */
-
-
-    /* height: 3000px; */
 }
 
 .header {
@@ -21,7 +17,6 @@ body {
 .header-limited-width {
     max-width: 70%;
     margin: 0 auto;
-    /* Центрируем контент */
 }
 
 /* .paws {
@@ -211,11 +206,6 @@ a:hover {
 .footer-limited-width {
     width: 70%;
     margin: 0 auto;
-}
-
-
-.footer-top-section {
-    /* width: 70%; */
 }
 
 #footer-logo {
