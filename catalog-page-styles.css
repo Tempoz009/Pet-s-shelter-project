@@ -522,3 +522,55 @@ img {
     display: flex;
     /* justify-content: center; */
 }
+
+
+
+@media (max-width: 768px) {
+    .max-dog-limit-length,
+    .luka-dog-limit-length,
+    .rocky-dog-limit-length,
+    .sadie-dog-limit-length {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #max-dog-img,
+    #luka-dog-img,
+    #rocky-dog-img,
+    #sadie-dog-img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .max-dog-right-part,
+    .luka-dog-left-part,
+    .rocky-dog-left-part,
+    .sadie-dog-left-part {
+        width: 100%;
+    }
+
+    #max-dog-title,
+    #luka-dog-title,
+    #rocky-dog-title,
+    #sadie-dog-title {
+        font-size: 24px;
+    }
+
+    #max-dog-description,
+    #luka-dog-description,
+    #rocky-dog-description,
+    #sadie-dog-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #max-dog-button,
+    #luka-dog-button,
+    #rocky-dog-button,
+    #sadie-dog-button {
+        width: 80%;
+        font-size: 18px;
+    }
+}
